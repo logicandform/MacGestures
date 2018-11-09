@@ -134,8 +134,8 @@
 				22F5C006216D195600169387 /* NodeGestureManager.swift */,
 				22382B2F216C40F70031FA23 /* GestureHandler.swift */,
 				22382B2B216C408B0031FA23 /* DispatchTimer.swift */,
-				22382B33216C41510031FA23 /* JSON.swift */,
 				2232E09D218CFB9900A34C50 /* FrictionLevel.swift */,
+				22382B33216C41510031FA23 /* JSON.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
