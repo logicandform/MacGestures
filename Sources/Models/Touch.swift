@@ -12,7 +12,7 @@ public enum TouchState: Int {
 
 public class Touch: Hashable, CustomStringConvertible {
 
-    public var position: CGPoint
+    public var position = CGPoint(x: 0, y: 0)
     public var state: TouchState
     public let screen: Int
     public let id: Int
@@ -33,6 +33,12 @@ public class Touch: Hashable, CustomStringConvertible {
         self.state = state
         self.screen = screen
         self.id = id
+    }
+
+    public init(state: TouchState, id: Int, screen: Int) {
+        self.state = state
+        self.id = id
+        self.screen = screen
     }
 
 

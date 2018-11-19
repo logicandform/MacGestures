@@ -21,7 +21,7 @@ public class PanGestureRecognizer: NSObject, GestureRecognizer {
         static let minimumDeltaUpdateThreshold = 4.0
         static let gestureDelay = 0.1
     }
-    
+
 
     // MARK: Init
 

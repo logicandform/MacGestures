@@ -21,10 +21,22 @@
 		22382B32216C41340031FA23 /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22382B31216C41340031FA23 /* CoreGraphics.swift */; };
 		22382B34216C41510031FA23 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22382B33216C41510031FA23 /* JSON.swift */; };
 		22382B36216C418C0031FA23 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22382B35216C418C0031FA23 /* Numbers.swift */; };
+		229B0A92219E8AC200002694 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B0A91219E8AC200002694 /* DeviceManager.swift */; };
+		229B0A94219E955E00002694 /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B0A93219E955E00002694 /* DeviceHandler.swift */; };
 		22F5C007216D195600169387 /* NodeGestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5C006216D195600169387 /* NodeGestureManager.swift */; };
 		22F73D98216D31EE0016EF55 /* MultiTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F73D97216D31EE0016EF55 /* MultiTapGestureRecognizer.swift */; };
 		22F73D9A216D3DE70016EF55 /* GestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F73D99216D3DE70016EF55 /* GestureState.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		229B0AB6219F565E00002694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 229B0AB2219F565C00002694 /* GestureDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 229B0A9F219F565A00002694;
+			remoteInfo = GestureDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2232E09D218CFB9900A34C50 /* FrictionLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrictionLevel.swift; sourceTree = "<group>"; };
@@ -43,6 +55,9 @@
 		22382B31216C41340031FA23 /* CoreGraphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphics.swift; sourceTree = "<group>"; };
 		22382B33216C41510031FA23 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		22382B35216C418C0031FA23 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		229B0A91219E8AC200002694 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		229B0A93219E955E00002694 /* DeviceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHandler.swift; sourceTree = "<group>"; };
+		229B0AB2219F565C00002694 /* GestureDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GestureDemo.xcodeproj; path = GestureDemo/GestureDemo.xcodeproj; sourceTree = "<group>"; };
 		22F5C006216D195600169387 /* NodeGestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeGestureManager.swift; sourceTree = "<group>"; };
 		22F73D97216D31EE0016EF55 /* MultiTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		22F73D99216D3DE70016EF55 /* GestureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureState.swift; sourceTree = "<group>"; };
@@ -62,6 +77,7 @@
 		22382AFE216C167F0031FA23 = {
 			isa = PBXGroup;
 			children = (
+				229B0A95219F55F100002694 /* Demo */,
 				22382B14216C3EC80031FA23 /* Sources */,
 				22382B13216C3E880031FA23 /* Metadata */,
 				22382B09216C167F0031FA23 /* Products */,
@@ -88,6 +104,7 @@
 		22382B14216C3EC80031FA23 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				229B0ABC219F57DA00002694 /* Managers */,
 				22382B27216C3FCE0031FA23 /* Gestures */,
 				22382B28216C3FD40031FA23 /* Models */,
 				22382B2A216C406D0031FA23 /* Helpers */,
@@ -130,14 +147,39 @@
 		22382B2A216C406D0031FA23 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				22382B2D216C40C90031FA23 /* GestureManager.swift */,
 				22F5C006216D195600169387 /* NodeGestureManager.swift */,
 				22382B2F216C40F70031FA23 /* GestureHandler.swift */,
 				22382B2B216C408B0031FA23 /* DispatchTimer.swift */,
 				2232E09D218CFB9900A34C50 /* FrictionLevel.swift */,
 				22382B33216C41510031FA23 /* JSON.swift */,
+				229B0A93219E955E00002694 /* DeviceHandler.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		229B0A95219F55F100002694 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				229B0AB2219F565C00002694 /* GestureDemo.xcodeproj */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		229B0AB3219F565C00002694 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				229B0AB7219F565E00002694 /* GestureDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		229B0ABC219F57DA00002694 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				229B0A91219E8AC200002694 /* DeviceManager.swift */,
+				22382B2D216C40C90031FA23 /* GestureManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,12 +239,28 @@
 			mainGroup = 22382AFE216C167F0031FA23;
 			productRefGroup = 22382B09216C167F0031FA23 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 229B0AB3219F565C00002694 /* Products */;
+					ProjectRef = 229B0AB2219F565C00002694 /* GestureDemo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				22382B07216C167F0031FA23 /* MacGestures */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		229B0AB7219F565E00002694 /* GestureDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GestureDemo.app;
+			remoteRef = 229B0AB6219F565E00002694 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		22382B06216C167F0031FA23 /* Resources */ = {
@@ -225,11 +283,13 @@
 				22382B36216C418C0031FA23 /* Numbers.swift in Sources */,
 				2232E09E218CFB9900A34C50 /* FrictionLevel.swift in Sources */,
 				22382B24216C3F750031FA23 /* Touch.swift in Sources */,
+				229B0A94219E955E00002694 /* DeviceHandler.swift in Sources */,
 				22382B1B216C3F380031FA23 /* GestureRecognizer.swift in Sources */,
 				22382B32216C41340031FA23 /* CoreGraphics.swift in Sources */,
 				22382B2C216C408B0031FA23 /* DispatchTimer.swift in Sources */,
 				22F5C007216D195600169387 /* NodeGestureManager.swift in Sources */,
 				22382B2E216C40C90031FA23 /* GestureManager.swift in Sources */,
+				229B0A92219E8AC200002694 /* DeviceManager.swift in Sources */,
 				22382B1F216C3F380031FA23 /* PinchGestureRecognizer.swift in Sources */,
 				22382B30216C40F70031FA23 /* GestureHandler.swift in Sources */,
 				22382B1D216C3F380031FA23 /* TapGestureRecognizer.swift in Sources */,
